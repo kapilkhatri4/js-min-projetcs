@@ -1,0 +1,40 @@
+@use "../scss/abstracts" as *;
+@use "../scss/base" as *;
+
+// counter
+.counter {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    height: 100%;
+    .counter-info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+      justify-items: center;
+      align-items: center;
+      .counter-item {
+        @include flexin;
+        flex-direction: column;
+      }
+      .count-no {
+        font-size: 3rem;
+        font-weight: 700;
+        color: $primary-light;
+      }
+      p {
+        font-size: 1.5rem;
+        color: $primary-light;
+      }
+      .count-info {
+        grid-column: 1/3;
+      }
+    }
+  }
+  @include mq(medium) {
+    .container {
+      grid-template-columns: 1fr !important;
+    }
+  }
+}

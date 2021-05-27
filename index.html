@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript mini projects</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo">
+          <a href="#"><span>Kapil</span></a>
+        </div>
+        <div class="contact">
+          <a href="#contact" class="btn">Contact</a>
+          <button class="nav-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <nav class="toggle-nav">
+      <div class="sidebar">
+        <a href="#todo" class="nav-toggle-link">Todo list</a>
+      </div>
+      <div class="sidebar">
+        <a href="#tabs" class="nav-toggle-link">Tabs</a>
+      </div>
+      <div class="sidebar">
+        <a href="#countdown" class="nav-toggle-link">Countdown</a>
+      </div>
+      <div class="sidebar">
+        <a href="#slider" class="nav-toggle-link">Slider</a>
+      </div>
+      <div class="sidebar">
+        <a href="#popup" class="nav-toggle-link">Popup Modal</a>
+      </div>
+      <div class="sidebar">
+        <a href="#gallery" class="nav-toggle-link">Filter Gallery</a>
+      </div>
+      <div class="sidebar">
+        <a href="#form" class="nav-toggle-link">Contact Form</a>
+      </div>
+    </nav>
+
+    <!-- home section -->
+    <section class="home">
+      <div class="container">
+        <div class="home-info">
+          <div class="title">
+            <h1>Welcome ! Here are 7 Mini Javascript Projects</h1>
+          </div>
+          <div class="subtitle">
+            <p>
+              These Projects are for my portfolio i build these things for
+              improve my javascript skills Hope You Like It
+            </p>
+            <a href="#todo" class="btn cta-home">Projects</a>
+          </div>
+        </div>
+        <div class="home-img"></div>
+      </div>
+    </section>
+
+    <!-- todo list -->
+    <section class="bg todo__bg slide-in" id="todo">
+      <div class="heading">
+        <h1>TODO List</h1>
+      </div>
+      <div class="container">
+        <div class="todo--wrap">
+          <div class="todo__write">
+            <input
+              type="text"
+              name="write"
+              id="write"
+              placeholder="Create New Task"
+            />
+            <button id="submit">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+          <div class="todo__list"></div>
+          <div class="todo__nav">
+            <button class="clear-btn btn">Clear Tasks</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- tabs -->
+    <section class="bg tabs slide-in" id="tabs">
+      <div class="heading">
+        <h1>Tabs</h1>
+      </div>
+      <div class="container tab-container">
+        <div class="tab__btn">
+          <button class="tab__btn__items btn-active" data-button="1">
+            React
+          </button>
+          <button class="tab__btn__items" data-button="2">Vue</button>
+          <button class="tab__btn__items" data-button="3">Anugular</button>
+        </div>
+        <div class="tab__content">
+          <div class="content content-1 tab-active">
+            <div class="content-body">
+              <h1>React js</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+                placeat impedit repellat explicabo excepturi, asperiores rerum,
+                corrupti quibusdam ea assumenda expedita. Facere numquam
+                necessitatibus neque dolorum? Id modi laboriosam officia.
+              </p>
+            </div>
+            <div class="content-img">
+              <img src="img/react.png" alt="" />
+            </div>
+          </div>
+          <div class="content content-2">
+            <div class="content-body">
+              <h1>Vue js</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+                placeat impedit repellat explicabo excepturi, asperiores rerum,
+                corrupti quibusdam ea assumenda expedita. Facere numquam
+                necessitatibus neque dolorum? Id modi laboriosam officia.
+              </p>
+            </div>
+            <div class="content-img">
+              <img src="img/vue.png" alt="" />
+            </div>
+          </div>
+          <div class="content content-3">
+            <div class="content-body">
+              <h1>Angular js</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+                placeat impedit repellat explicabo excepturi, asperiores rerum,
+                corrupti quibusdam ea assumenda expedita. Facere numquam
+                necessitatibus neque dolorum? Id modi laboriosam officia.
+              </p>
+            </div>
+            <div class="content-img">
+              <img src="img/angular.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- counter -->
+    <section class="counter bg slide-in" id="countdown">
+      <div class="heading">
+        <h1>Countdown</h1>
+      </div>
+      <div class="container">
+        <div class="counter-info">
+          <div class="counter-item">
+            <span class="count-no days"></span>
+            <p>Days</p>
+          </div>
+
+          <div class="counter-item">
+            <span class="count-no hour"></span>
+            <p>Hours</p>
+          </div>
+
+          <div class="counter-item">
+            <span class="count-no min"></span>
+            <p>Minutes</p>
+          </div>
+
+          <div class="counter-item">
+            <span class="count-no seconds"></span>
+            <p>Seconds</p>
+          </div>
+          <p class="count-info">We are Opening Soon !!!</p>
+        </div>
+        <div class="counter-img">
+          <img src="img/counter.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- sliders -->
+    <section class="bg slidersAll slide-in" id="slider">
+      <div class="sliders">
+        <div class="slide">
+          <img class="slider-img" src="" ="jungle " />
+          
+        </div>
+        <div class="slider-text">This is Slider</div>
+        <div class="slider-button">
+          <button class="prev"><i class="fas fa-chevron-left"></i></button>
+          <button class="next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- popup -->
+    <section class="bg popup slide-in" id="popup">
+      <div class="heading">
+        <h1>Popup Window</h1>
+      </div>
+      <div class="container">
+        <img src="img/popup/notify.png" alt="" />
+        <h3>Get Register for Notifications</h3>
+        <div class="allBtn">
+          <button class="subsBtn btn">Subscribe</button>
+          <button class="regsBtn btn">Register</button>
+        </div>
+        <div class="notify-pop"></div>
+      </div>
+    </section>
+
+    <!-- gallery-filter -->
+    <section class="filter-gallery bg slide-in" id="gallery">
+      <div class="heading">
+        <h1>Filter Gallery</h1>
+      </div>
+      <div class="container">
+        <div class="filter-btn-wrap">
+          <button class="btn filter-btn" data-filter="all">All</button>
+          <button class="btn filter-btn" data-filter="landscape">
+            Landscape
+          </button>
+          <button class="btn filter-btn" data-filter="sky">sky</button>
+          <button class="btn filter-btn" data-filter="beach">Beach</button>
+          <button class="btn filter-btn" data-filter="animals">Animals</button>
+        </div>
+        <div class="filter-img">
+          <img
+            class="grid-gallery-item"
+            src="img/filtergallery/landscape.jpg"
+            data-item="landscape"
+          />
+          <img
+            class="grid-gallery-item"
+            src="img/filtergallery/animals.jpg"
+            data-item="animals"
+          />
+          <img
+            class="grid-gallery-item"
+            src="img/filtergallery/sky.jpg"
+            data-item="sky"
+          />
+          <img
+            class="grid-gallery-item"
+            src="img/filtergallery/beach.jpg"
+            data-item="beach"
+          />
+          <img
+            class="grid-gallery-item"
+            src="img/filtergallery/landscape-2.jpg"
+            data-item="landscape"
+          />
+          <img
+            class="grid-gallery-item"
+            src="img/filtergallery/animals-2.jpg"
+            data-item="animals"
+          />
+          <img
+            class="grid-gallery-item"
+            src="img/filtergallery/sky-2.jpg"
+            data-item="sky"
+          />
+          <img
+            class="grid-gallery-item"
+            src="img/filtergallery/beach-2.jpg"
+            data-item="beach"
+          />
+        </div>
+      </div>
+      <div class="imgoverlay">
+        <img class="overlay-img" src="" alt="" />
+      </div>
+    </section>
+
+    <!-- contact form -->
+    <section class="bg contact slide-in" id="form">
+      <div class="heading">
+        <h1>Sign-up Form</h1>
+      </div>
+      <div class="container">
+        <div class="form-section">
+          <div class="logo">
+            <h1>Shop<span> cart</span></h1>
+          </div>
+          <div class="sign-btn">
+            <a href="" class="sign-active sign-up-tab">Sign up</a>
+          </div>
+
+          <form>
+            <div class="name-sec form-item">
+              <label for="name">Name</label><br />
+              <input type="text" id="name" name="name" />
+            </div>
+            <div class="errName err">Please Enter Name</div>
+            <div class="email-sec form-item">
+              <label for="email">Email</label><br />
+              <input type="email" id="email" name="email" />
+            </div>
+            <div class="err-email err">Please Enter Valid Email</div>
+            <div class="password-sec form-item">
+              <label for="password">Password</label><br />
+              <input type="password" id="password" name="password" />
+            </div>
+            <div class="err-pass err">
+              Please Enter Atleast 6 digit Password
+            </div>
+            <div class="password-sec confirm-pass form-item">
+              <label for="Confirm">Confirm Password</label><br />
+              <input type="password" id="confirm" name="Confirm" />
+            </div>
+            <div class="err-conf-pass err">Confirm Password os Not Same</div>
+            <div class="more-info">
+              <div class="remember">
+                <input type="checkbox" name="remember-me" id="remember-me" />
+                <label for="remember-me">Remember-me</label>
+              </div>
+              <div class="forgot-pass display-hide">
+                <a href="#" id="forgot-pass">Forgot Password ?</a>
+              </div>
+            </div>
+            <div class="submit">
+              <input type="submit" value="Sign-up" id="submit" />
+            </div>
+            <div class="sign-with">
+              <p>Or Continue With</p>
+              <div class="google social">
+                <a href="">
+                  <img src="img/form/google.png" alt="" width="20px" />
+                </a>
+              </div>
+              <div class="facebook social">
+                <a href="">
+                  <img src="img/form/facebook.png" alt="" width="20px" />
+                </a>
+              </div>
+              <hr />
+            </div>
+          </form>
+        </div>
+        <div class="main-img">
+          <img src="img/form/sign-in.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <footer id="contact">
+      <span><i class="fas fa-envelope"></i></span> kapilkhatri4040@gmail.com
+    </footer>
+    <!-- script -->
+    <script src="js/main.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/filter-gallery.js"></script>
+    <script src="js/contact-form.js"></script>
+  </body>
+</html>

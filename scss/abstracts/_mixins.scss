@@ -1,0 +1,51 @@
+@use 'breakpoints' as *;
+@use 'colors' as  *;
+
+@mixin mq($key) {
+  $size: map-get($breakpoints, $key);
+
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
+@mixin transition {
+  transition: all 0.5s ease;
+}
+@mixin flexin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background-image: linear-gradient(
+    to right,
+    $primary-dark 0%,
+    $primary-light 51%,
+    $primary-dark 100%
+  );
+  color: $secondary-light;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 20px;
+  background-size: 200% auto;
+  @include transition;
+  &:hover {
+    background-position: right center;
+    @include transition;
+  }
+  @include mq(small){
+    font-size: .8rem!important;
+  }
+}
+
+
+.heading {
+  text-align: center;
+  margin: 2rem 0;
+  h1 {
+    font-size: 2.5rem;
+    color: $primary-light;
+  }
+}
